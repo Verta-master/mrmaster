@@ -110,7 +110,22 @@ h6 {
 
 h2,
 .title-2 {
+  position: relative;
+  z-index: 2;
   font-size: 48px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -64px;
+    top: -60px;
+    width: 128px;
+    height: 159px;
+    background-image: url(../img/icons/title.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 h3,
