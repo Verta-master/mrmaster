@@ -910,3 +910,118 @@ h4,
   font-size: 64px;
   line-height: 1;
 }
+.brand {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.brand__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.brand__info {
+  width: 400px;
+}
+.brand__table {
+  width: 568px;
+}
+.brand__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.brand__list li {
+  width: 168px;
+  height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 16px rgba(153, 193, 211, 0.5);
+          box-shadow: 0px 4px 16px rgba(153, 193, 211, 0.5);
+  border-radius: 12px;
+}
+.brand__list li:nth-child(3n) {
+  margin-right: 0;
+}
+.brand__list li img {
+  display: block;
+}
+.brand__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 48px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0177FB;
+  border-radius: 12px;
+  background-color: rgba(250, 193, 50, 0.2);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.brand__btn:hover,
+.brand__btn:active {
+  color: #fff;
+  background-color: #0177FB;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.brand__btn span {
+  position: relative;
+}
+.brand__btn span::after {
+  content: "\00BB";
+  position: absolute;
+  top: -3px;
+  right: -17px;
+  color: inherit;
+  font-size: 20px;
+  line-height: 1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.info {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.info__block {
+  padding: 70px;
+  padding-top: 50px;
+  background-color: #EBF8FF;
+  border-radius: 24px;
+  background-image: url(../img/icons/icon-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 269px 269px;
+  background-position: bottom right;
+}
+.info__block .title-2::before {
+  display: none;
+}
