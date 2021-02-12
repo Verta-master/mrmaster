@@ -1,6 +1,6 @@
 .category {
-  margin-top: -100px;
-  margin-bottom: 109px;
+  margin-top: -115px;
+  margin-bottom: 75px;
 }
 
 .category__list {
@@ -76,6 +76,11 @@
       opacity: 1;
       .transition();
     }
+    .category__link::after {
+      background-image: url(../img/icons/arrow-yellow.svg);
+      background-color: @blue;
+      .transition();
+    }
   }
 }
 
@@ -89,10 +94,25 @@
   padding-right: 60px;
   padding-bottom: 100px;
   text-decoration: none;
-//  overflow: hidden;
   
   .title-3 {
     margin: 0;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 42px;
+    left: 44px;
+    width: 56px;
+    height: 56px;
+    background-image: url(../img/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 12px;
+    border-radius: 50%;
+    border: 3px solid #0177FB;
+    .transition();
   }
 }
 

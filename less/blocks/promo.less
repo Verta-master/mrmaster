@@ -8,12 +8,14 @@
 
 .promo__wrap {
   display: flex;
-  justify-content: space-between;
+//  justify-content: space-between;
 }
 
 .promo__info {
-  width: 50%;
-  padding-left: 43px;
+  width: 46%;
+  margin-right: 20px;
+  padding-left: 45px;
+  padding-top: 35px;
   font-size: 18px;
   line-height: 1.4;
   color: #24313A;
@@ -21,16 +23,17 @@
   ul {
     .reset();
     list-style: none;
-    margin-bottom: 46px;
+    margin-bottom: 50px;
     
     li {
       position: relative;
+      margin-bottom: 7px;
       
       &::before {
         content: "";
         position: absolute;
         top: 3px;
-        left: -43px;
+        left: -40px;
         width: 18px;
         height: 18px;
         background-image: url(../img/icons/plus.svg);
@@ -51,13 +54,16 @@
 
 .promo__btn {
   position: relative;
-  z-index: 2;
+  z-index: 5;
+  width: 320px;
+  padding: 24px 36px;
+  font-size: 16px;
   box-shadow: inset 0px 4px 8px rgba(255, 255, 255, 0.2);
   
   &::before {
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     left: 0px;
     right: 0px;
     top: 3px;
@@ -79,5 +85,14 @@
     opacity: 0.5;
     filter: blur(30px);
     border-radius: 2px;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    &::after {
+      opacity: 0;
+      .transition();
+    }
   }
 }
