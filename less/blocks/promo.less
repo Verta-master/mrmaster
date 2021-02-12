@@ -1,0 +1,83 @@
+.promo {
+  background-color: #D4F1FF;
+  background-image: url(../img/images/bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.promo__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__info {
+  width: 50%;
+  padding-left: 43px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #24313A;
+  
+  ul {
+    .reset();
+    list-style: none;
+    margin-bottom: 46px;
+    
+    li {
+      position: relative;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: -43px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../img/icons/plus.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.promo__img {
+  width: 50%;
+  
+  img {
+    display: block;
+  }
+}
+
+.promo__btn {
+  position: relative;
+  z-index: 2;
+  box-shadow: inset 0px 4px 8px rgba(255, 255, 255, 0.2);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+    top: 3px;
+    bottom: -3px;
+    background: #24313A;
+    opacity: 0.1;
+    border-radius: 12px;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 25px;
+    right: 25px;
+    top: 24px;
+    bottom: -20px;
+    background: #0177FB;
+    opacity: 0.5;
+    filter: blur(30px);
+    border-radius: 2px;
+  }
+}
