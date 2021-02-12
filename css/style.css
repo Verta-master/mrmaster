@@ -431,15 +431,16 @@ a {
 address {
   font-style: normal;
 }
-main a,
-footer a {
+main a {
   text-decoration: underline;
 }
 main a:hover,
-footer a:hover,
-main a:active,
-footer a:active {
+main a:active {
   text-decoration: none;
+}
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -1024,4 +1025,185 @@ h4,
 }
 .info__block .title-2::before {
   display: none;
+}
+.payment {
+  font-size: 14px;
+}
+.payment b {
+  display: block;
+  margin-bottom: 5px;
+  text-align: right;
+}
+.payment__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.payment__list li {
+  width: 56px;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 18px;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.payment__list li img {
+  display: block;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social__item {
+  margin-right: 19px;
+}
+.social__link {
+  width: 33px;
+  height: 33px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__link--in {
+  background-image: url(../img/icons/instagram.svg);
+}
+.social__link--fb {
+  width: 34px;
+  background-image: url(../img/icons/facebook.svg);
+}
+.social__link--ok {
+  width: 34px;
+  background-image: url(../img/icons/ok.svg);
+}
+.social__link--vk {
+  background-image: url(../img/icons/vk.svg);
+}
+.social__link:hover,
+.social__link:active {
+  opacity: 0.7;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer {
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.01em;
+  background-color: #21323F;
+}
+.footer__top,
+.footer__bottom .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__top {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__bottom {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(134, 149, 173, 0.1);
+}
+.footer__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 29px;
+  height: 6px;
+  background: #0177FB;
+  border-radius: 2px;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__contacts {
+  text-align: right;
+}
+.footer__contacts span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer__contacts address {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.footer__phone {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  color: #FAC132;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__phone:hover,
+.footer__phone:active {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__mail {
+  display: block;
+  margin-bottom: 35px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.8;
 }
