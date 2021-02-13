@@ -6,3 +6,10 @@ $(window).scroll(function(){
     $('.header').removeClass('header--scroll');
   };
 });
+
+//Footer
+if (window.innerWidth < 1024) {
+  $('.footer__title').click(function() {
+    $(this).next().slideToggle();
+  })
+}

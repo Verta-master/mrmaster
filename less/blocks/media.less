@@ -1,0 +1,279 @@
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+  .title, h1 {
+    font-size: 48px;
+  }
+  .title-2, h2 {
+    font-size: 36px;
+    
+    &::before {
+      left: -44px;
+      top: -44px;
+      width: 98px;
+      height: 129px;
+    }
+  }
+  .category__list {
+    justify-content: space-around;
+  }
+  .benefits__slider .swiper-wrapper,
+  .service__slider .swiper-wrapper {
+    justify-content: flex-start;
+  }
+  .benefits__pagination,
+  .service__pagination {
+    display: block;
+    bottom: 0 !important;
+  }
+  .benefits__slider,
+  .service__slider {
+    padding-bottom: 30px;
+  }
+}
+//----------------------------------------
+@media (max-width: 1022px) {
+  .header__top {
+    display: none;
+  }
+  .header__bottom {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  main {
+    padding-top: 65px;
+  }
+  .header__call {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .header__phone {
+    font-size: 22px;
+  }
+  .header__time {
+    font-size: 12px;
+  }
+  .logo {
+    max-width: 170px;
+  }
+  .title, h1 {
+    font-size: 36px;
+  }
+  .promo__info {
+    padding-top: 20px;
+  }
+  .promo__info ul {
+    margin-bottom: 20px;
+  }
+  .promo__btn {
+    padding: 15px 20px;
+  }
+  .category {
+    margin-top: -50px;
+  }
+  .category__list {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .category__item {
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 16px rgba(153, 193, 211, 0.25);
+    .transition();
+    
+    &::before,
+    &::after {
+      display: none;
+    }
+    
+    &:hover,
+    &:active {
+      background-color: #FFE492;
+      .transition();
+    }
+  }
+  .brand__wrap {
+    display: block;
+  }
+  .brand__table,
+  .brand__info {
+    width: 100%;
+  }
+  .brand__info {
+    margin-bottom: 30px;
+  }
+  .brand__list {
+    justify-content: space-around;
+    
+    li {
+      margin-right: 0;
+    }
+  }
+  .footer__bottom .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__bottom {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .social {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .payment__list li,
+  .social__item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer__contacts {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .payment b {
+    text-align: center;
+  }
+  .payment__list {
+    justify-content: center;
+  }
+  .footer__list {
+    display: none;
+  }
+  .footer__title {
+    cursor: pointer;
+    
+    &::after {
+      content: "\00BB";
+      position: absolute;
+      top: 0;
+      right: 50px;
+      color: @blue;
+      transform: rotate(90deg);
+    }
+  }
+  .footer__nav {
+    width: 50%;
+  }
+}
+
+//----------------------------------------
+@media (max-width: 766px) {
+  .header__time {
+    display: none;
+  }
+  .header__phone {
+    font-size: 0;
+    width: 36px;
+    height: 36px;
+    background-color: @yellow;
+    border-radius: 12px;
+    background-image: url(../img/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+  }
+  .header__call {
+    position: relative;
+    width: 130px;
+    font-size: 0;
+    
+    &::after {
+      content: "Перезвонить";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font: inherit;
+      font-size: 12px;
+      pointer-events: none;
+    }
+  }
+  .promo__wrap {
+    display: block;
+  }
+  .promo__info {
+    width: 100%;
+    margin-right: 0;
+  }
+  .promo__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .category__item:last-child {
+    width: 370px;
+    
+    .category__img {
+      bottom: 0;
+      right: 0;
+      
+      img {
+        max-height: 200px;
+      }
+    }
+  }
+  .category__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .info__block {
+    padding: 10px 30px;
+  }
+  .info__text {
+    padding-right: 0;
+  }
+}
+
+//----------------------------------------
+@media (max-width: 480px) {
+  .footer__nav {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer__title::after {
+    right: 0;
+  }
+  .brand,
+  .benefits,
+  .info {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .category__item:last-child .category__img img {
+    max-height: 150px;
+  }
+  .category__img img {
+    max-height: 200px;
+  }
+  .promo__btn {
+    font-size: 13px;
+  }
+  .title, h1 {
+    font-size: 30px;
+  }
+  .title-2, h2 {
+    font-size: 26px;
+    
+    &::before {
+      left: -34px;
+      top: -34px;
+      width: 78px;
+      height: 109px;
+    }
+  }
+  .logo {
+    max-width: 120px;
+  }
+  main {
+    padding-top: 55px;
+  }
+  .info__block {
+    background-size: 100px 100px;
+  }
+}
