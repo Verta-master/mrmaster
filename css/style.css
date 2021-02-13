@@ -645,6 +645,14 @@ h4,
   background-position: center bottom;
   background-size: cover;
 }
+.promo--internal {
+  padding-top: 50px;
+  padding-bottom: 43px;
+}
+.promo--internal .promo__info {
+  width: 45%;
+  padding-top: 60px;
+}
 .promo__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1392,14 +1400,17 @@ h4,
   text-decoration: underline;
 }
 .price {
-  padding-top: 50px;
-  margin-bottom: 87px;
+  padding-top: 90px;
+  margin-bottom: 100px;
 }
 .price__sublist,
 .price__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.price__list {
+  margin-top: 80px;
 }
 .price__item {
   min-height: 169px;
@@ -1422,7 +1433,7 @@ h4,
           align-items: center;
 }
 .price__service {
-  width: 60%;
+  width: 58%;
   padding: 35px 40px;
 }
 .price__service span {
@@ -1437,7 +1448,7 @@ h4,
 }
 .price__block,
 .price__btn {
-  width: 20%;
+  width: 21%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1472,8 +1483,8 @@ h4,
 .price__sublist li {
   position: relative;
   padding-left: 40px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .price__sublist li::before {
   content: "";
@@ -1510,7 +1521,7 @@ h4,
 }
 .price__input {
   display: block;
-  width: 40%;
+  width: 41%;
   height: 56px;
   padding: 0 20px;
   border: 1px solid rgba(36, 49, 58, 0.15);
@@ -1537,7 +1548,7 @@ h4,
       flex-wrap: wrap;
 }
 .process {
-  margin-top: 50px;
+  margin-top: 133px;
   margin-bottom: 100px;
 }
 .process__drop ul,
@@ -1546,10 +1557,14 @@ h4,
   padding: 0;
   list-style: none;
 }
+.process__list {
+  margin-top: 80px;
+}
 .process__item {
   position: relative;
   padding: 35px 30px;
-  margin-bottom: 20px;
+  padding-bottom: 37px;
+  margin-bottom: 22px;
   line-height: 1.2;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 16px rgba(153, 193, 211, 0.4);
@@ -1595,19 +1610,22 @@ h4,
 }
 .process__drop {
   display: none;
-  padding-top: 20px;
+  padding-top: 25px;
   color: rgba(36, 49, 58, 0.8);
 }
 .process__drop ul li {
   position: relative;
   padding-left: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 .process__drop ul li::before {
   content: "\2013";
   position: absolute;
   top: 0;
   left: 0;
+}
+.process__drop ul li:last-child {
+  margin-bottom: 0;
 }
 .call {
   margin-bottom: 100px;
@@ -1633,7 +1651,7 @@ h4,
   z-index: 15;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: 51%;
   width: 8px;
   background-color: #FFFFFF;
 }
@@ -1653,12 +1671,12 @@ h4,
 }
 .call__form,
 .call__block {
-  width: 49%;
   position: relative;
   z-index: 5;
 }
 .call__block {
-  padding: 50px 40px;
+  width: 50%;
+  padding: 50px 45px;
   line-height: 1.2;
 }
 .call__block ul {
@@ -1680,6 +1698,7 @@ h4,
   left: 0;
 }
 .call__form {
+  width: 48%;
   padding: 35px 80px;
 }
 .call__form .form__comment a {
@@ -1688,6 +1707,10 @@ h4,
 .call__form .form__comment a:hover,
 .call__form .form__comment a:active {
   text-decoration: underline;
+}
+.call__form .form__btn {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 .call__slogan {
   margin-top: 0;
@@ -1716,7 +1739,7 @@ h4,
 }
 .review .wrapper {
   position: relative;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
 }
 .review .title-2 {
@@ -1727,6 +1750,7 @@ h4,
   z-index: 2;
   top: 97px;
   right: 15px;
+  width: 200px;
   color: #0177FB;
   background-color: rgba(1, 119, 251, 0.1);
 }
@@ -1750,8 +1774,8 @@ h4,
 .review__slide::before {
   content: "";
   position: absolute;
-  top: 37px;
-  right: 20px;
+  top: 55px;
+  right: 35px;
   width: 35px;
   height: 30px;
   background-image: url(../img/icons/quotes.svg);
@@ -1759,11 +1783,12 @@ h4,
   background-size: contain;
 }
 .review__info {
-  padding: 35px 20px;
+  padding: 37px 20px;
+  padding-bottom: 20px;
   font-size: 15px;
 }
 .review__rating {
-  padding: 10px 20px;
+  padding: 7px 20px;
   border-top: 1px solid rgba(36, 49, 58, 0.1);
 }
 .review__top {
@@ -1773,7 +1798,7 @@ h4,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding-right: 35px;
 }
 .review__top time {
