@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mr.Master</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper">
+        <ul class="header__menu">
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper header__bottom">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <span class="header__time">пн-вс с 7-00 по 23-00</span>
+      <a href="tel:+7800607080" class="header__phone">8 800 60-70-80</a>
+      <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--yellow header__call">узнать стоимость ремонта</a>
+    </div>
+  </header>
+  
+  <main>
+    <section class="promo">
+      <div class="wrapper promo__wrap">
+        <div class="promo__info">
+          <h1 class="title">Стиральная машина не выключается</h1>
+          <p>Виды и стоимость ремонта, процесс ремонта</p>
+        </div>
+        <figure class="promo__img">
+          <img src="img/images/promo-1.png" alt="Mr.Master">
+        </figure>
+      </div>
+    </section>
+    
+    <section class="price">
+      <div class="wrapper">
+        <p class="title-2">Решение проблемы</p>
+        <ul class="price__list">
+          <li class="price__item">
+            <div class="price__service">
+              <p class="price__title">Ремонт электронного модуля</p>
+              <span>Модуль ломается от коротких замыканий, повышенной влажности и скачков электричества.</span>
+            </div>
+            <div class="price__block">
+              <div class="price__value">от 1890 ₽</div>
+              <span>+ запчасти от 500 ₽</span>
+            </div>
+            <div class="price__btn">
+              <a href="#" class="btn">подробнее</a>
+            </div>
+          </li>
+          <li class="price__item">
+            <div class="price__service">
+              <p class="price__title">Ремонт двигателя</p>
+              <span>Порвалась обмотка двигателя, в двигатель попала вода, случилось короткое замыкание.</span>
+            </div>
+            <div class="price__block">
+              <div class="price__value">от 1890 ₽</div>
+              <span>+ запчасти от 500 ₽</span>
+            </div>
+            <div class="price__btn">
+              <a href="#" class="btn">подробнее</a>
+            </div>
+          </li>
+          <li class="price__item">
+            <div class="price__service">
+              <p class="price__title">Замена ТЭНа</p>
+              <span>На ТЭНе оседает накипь, маленькие кусочки ткани и грязь. Они вызывают перегрев ТЭНа.</span>
+            </div>
+            <div class="price__block">
+              <div class="price__value">от 1890 ₽</div>
+              <span>+ запчасти от 500 ₽</span>
+            </div>
+            <div class="price__btn">
+              <a href="#" class="btn">подробнее</a>
+            </div>
+          </li>
+          <li class="price__item">
+            <div class="price__service">
+              <p class="price__title">Замена помпы</p>
+              <span>Помпа ломается от засоров и повышенной жесткости воды.</span>
+            </div>
+            <div class="price__block">
+              <div class="price__value">от 1890 ₽</div>
+              <span>+ запчасти от 500 ₽</span>
+            </div>
+            <div class="price__btn">
+              <a href="#" class="btn">подробнее</a>
+            </div>
+          </li>
+          <li class="price__item">
+            <ul class="price__sublist">
+              <li>Диагностика бесплатная, но обязательная.</li>
+              <li>Выезд мастера –  <b>190 ₽</b></li>
+            </ul>
+            <form action="#" class="price__form">
+              <div class="price__line">
+                <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__">
+                <button type="submit" class="btn btn--yellow">Оформить заявку</button>
+              </div>
+              <p class="form__comment">Нажимая на кнопку «Отправить», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку персональных данных в <a href="#">соответствии с условиями.</a></p>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="banner">
+      <div class="wrapper">
+        <ul class="banner__list">
+          <li class="banner__item">
+            <img src="img/images/banner-1.png" alt="Banner">
+          </li>
+          <li class="banner__item">
+            <img src="img/images/banner-2.png" alt="Banner">
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="process">
+      <div class="wrapper">
+        <p class="title-2">Процесс ремонта</p>
+        <ul class="process__list">
+          <li class="process__item">
+            <div class="process__title">Почему выбирают нас</div>
+            <div class="process__drop">
+              <p>Процесс ремонта</p>
+            </div>
+          </li>
+          <li class="process__item">
+            <div class="process__title">Сколько длится ремонт стиральной машины?</div>
+            <div class="process__drop">
+              <p>Процесс ремонта</p>
+            </div>
+          </li>
+          <li class="process__item">
+            <div class="process__title">Как проходит ремонт?</div>
+            <div class="process__drop">
+              <p>Процесс ремонта</p>
+            </div>
+          </li>
+          <li class="process__item">
+            <div class="process__title">Как проходит контроль качества?</div>
+            <div class="process__drop">
+              <ul>
+                <li>Приедем к вам в течение часа</li>
+                <li>Определим проблему</li>
+                <li>Согласуем цену с вами: назовем цену за ремонт + стоимость запчасти</li>
+                <li>Починим</li>
+                <li>Проверим качество ремонта</li>
+              </ul>
+            </div>
+          </li>
+          <li class="process__item">
+            <div class="process__title">Какие марки стиральных машин вы ремонтируете?</div>
+            <div class="process__drop">
+              <p>Процесс ремонта</p>
+            </div>
+          </li>
+          <li class="process__item">
+            <div class="process__title">Какие модели стиральных машин вы ремонтируете?</div>
+            <div class="process__drop">
+              <p>Процесс ремонта</p>
+            </div>
+          </li>
+          <li class="process__item">
+            <div class="process__title">Когда стиральную машину нельзя починить?</div>
+            <div class="process__drop">
+              <p>Процесс ремонта</p>
+            </div>
+          </li>
+          <li class="process__item">
+            <div class="process__title">Я живу в области. Сможете приехать?</div>
+            <div class="process__drop">
+              <p>Процесс ремонта</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="call">
+      <div class="wrapper">
+        <div class="call__wrap">
+          <div class="call__block">
+            <p class="call__slogan">Звоните прямо сейчас</p>
+            <a href="tel:+78001234567" class="call__phone">8 800 123 45 67</a>
+            <ul>
+              <li>Превосходное качество</li>
+              <li>Бессрочная гарантия</li>
+              <li>Бесплатная диагностика</li>
+              <li>Доставка в сервис и обратно</li>
+              <li>855 положительных отзывов</li>
+            </ul>
+          </div>
+          <div class="call__form">
+            <p class="modal__title">Давайте обсудим вашу поломку</p>
+            <form action="#" class="form">
+              <input type="text" class="form__input" placeholder="Имя">
+              <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__">
+              <input type="checkbox" id="checkbox1" class="form__checkbox">
+              <label for="checkbox1" class="form__label">Я не робот</label>
+              <button type="submit" class="btn form__btn">получить консультацию</button>
+              <p class="form__comment">Оставляя заявку вы подтверждаете согласие с <a href="#">политикой конфиденциальности</a> нашего сайта</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="review">
+      <div class="wrapper">
+        <p class="title-2">Отзывы наших клиентов</p>
+        <a href="#" class="btn review__btn">все отзывы</a>
+        <div class="swiper-container review__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide review__slide">
+              <div class="review__info">
+                <div class="review__top">
+                  <figure class="review__avatar">
+                    <img src="img/images/ava-1.png" alt="Филипова Ольга">
+                  </figure>
+                  <div class="review__person">
+                    <p class="review__name">Филипова Ольга</p>
+                    <time datetime="2020-11-25">25 ноября</time>
+                  </div>
+                </div>
+                <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
+              </div>
+              <div class="review__rating">
+                <img src="img/icons/stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="swiper-slide review__slide">
+              <div class="review__info">
+                <div class="review__top">
+                  <figure class="review__avatar">
+                    <img src="img/images/ava-2.png" alt="Филипова Ольга">
+                  </figure>
+                  <div class="review__person">
+                    <p class="review__name">Филипова Ольга</p>
+                    <time datetime="2020-11-25">25 ноября</time>
+                  </div>
+                </div>
+                <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
+              </div>
+              <div class="review__rating">
+                <img src="img/icons/stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="swiper-slide review__slide">
+              <div class="review__info">
+                <div class="review__top">
+                  <figure class="review__avatar">
+                    <img src="img/images/ava-3.png" alt="Филипова Ольга">
+                  </figure>
+                  <div class="review__person">
+                    <p class="review__name">Филипова Ольга</p>
+                    <time datetime="2020-11-25">25 ноября</time>
+                  </div>
+                </div>
+                <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
+              </div>
+              <div class="review__rating">
+                <img src="img/icons/stars.png" alt="rating">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination review__pagination"></div>
+          <div class="swiper-button-prev review__prev"></div>
+          <div class="swiper-button-next review__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="info">
+      <div class="wrapper">
+        <div class="info__wrap">
+          <p class="title-2">Мастер по ремонту бытовой техники на дом</p>
+          <div class="info__text">
+            <p>Ремонт бытовой техники на дому у заказчика по низким ценам и с использованием только оригинальных запчастей и комплектующих. Выезд на диагноcтику — бесплатный. Чтобы сделать заказ мастера на дом, свяжитесь с нашим диспетчером по телефону: <a href="tel:+74997030153">+7 (499) 703-01-53</a> и вкратце опишите техническую проблему.</p>
+            <p>В течении нескольких минут с Вами свяжется сервисный инженер из вашего района и с ним Вы сможете обсудить удобное для Вас время, задать вопросы по регламенту работ и уточнить стоимость ремонта вашей техники.</p>
+            <p>В большинстве случаев достаточно одного выезда специалиста, который всегда имеет при себе комплект необходимых запчастей. Если поломка серьёзная, будет проведена комплексная диагностика вышедших из строя узлов и, после определения дефектов, предложены оптимальные пути для решения проблемы.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper footer__top">
+      <nav class="footer__nav footer__nav--info">
+        <p class="footer__title">Информация</p>
+        <ul class="footer__list">
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Сертификаты</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__nav footer__nav--service">
+        <p class="footer__title">Услуги</p>
+        <ul class="footer__list">
+          <li><a href="#">Ремонт стиральных машин</a></li>
+          <li><a href="#">Ремонт посудомоечных машин</a></li>
+          <li><a href="#">Ремонт холодильников</a></li>
+          <li><a href="#">Ремонт кофемашин</a></li>
+          <li><a href="#">Ремонт промышленной бытовой техники химчистки</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contacts">
+        <span>пн-вс с 7-00 по 23-00</span>
+        <a href="tel:+7800607080" class="footer__phone">8 800 60-70-80</a>
+        <address>Москва, ул. 9-я Сизам, дом 0в9</address>
+        <a href="mailto:info@mr-master.ru" class="footer__mail">info@mr-master.ru</a>
+        <div class="payment">
+          <b>Принимаем к оплате</b>
+          <ul class="payment__list">
+            <li><a href="#"><img src="img/images/payment-1.png" alt="Visa"></a></li>
+            <li><a href="#"><img src="img/images/payment-2.png" alt="MasterCard"></a></li>
+            <li><a href="#"><img src="img/images/payment-3.png" alt="YandexMoney"></a></li>
+            <li><a href="#"><img src="img/images/payment-4.png" alt="Mir"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrapper">
+        <span>© 2005-2021 «Мистер Мастер»</span>
+        <a href="#">Политика конфиденциальности</a>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--in" title="Instagram"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb" title="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--ok" title="Odnoklassniki"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk" title="VKontakte"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Давайте обсудим вашу поломку</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Имя">
+      <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__">
+      <input type="checkbox" id="checkbox" class="form__checkbox">
+      <label for="checkbox" class="form__label">Я не робот</label>
+      <button type="submit" class="btn form__btn">получить консультацию</button>
+      <p class="form__comment">Оставляя заявку вы подтверждаете согласие с <a href="#">политикой конфиденциальности</a> нашего сайта</p>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  
+  <!-- Slider -->
+  <script>
+    var mySwiper = new Swiper ('.review__slider', {
+      pagination: {
+        el: '.review__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.review__next',
+        prevEl: '.review__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      breakpoints: {
+        1022: {
+          slidesPerView: 2,
+        },
+        480: {
+          slidesPerView: 1,
+        }
+      }
+    });
+  </script>
+</body>
+</html>
