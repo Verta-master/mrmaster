@@ -20,6 +20,8 @@ var enableSwiper = function() {
     preventClicksPropagation: false,
     slidesPerView: 'auto',
     spaceBetween: 30,
+    freeMode: true,
+    mousewheelControl: true,
   })
 };
 
