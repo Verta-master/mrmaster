@@ -1,4 +1,4 @@
-var breakpoint = window.matchMedia('(max-width: 766px)');
+var breakpoint = window.matchMedia('(min-width: 1200px)');
 var newsSwiper;
 var breakpointChecker = function() {
   if (breakpoint.matches === true) {
