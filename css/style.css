@@ -1573,6 +1573,13 @@ h4,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.banner__item {
+  width: 49%;
+}
+.banner__item img {
+  width: 100%;
+  height: auto;
+}
 .process {
   margin-top: 133px;
   margin-bottom: 100px;
@@ -1922,9 +1929,6 @@ h4,
   .price__form {
     padding-left: 0;
   }
-  .banner__item {
-    width: 49%;
-  }
   .call__form {
     padding-left: 40px;
     padding-right: 40px;
@@ -2222,6 +2226,12 @@ h4,
   }
   .review__btn {
     position: static;
+  }
+  .modal {
+    padding: 35px 20px;
+  }
+  .form__btn {
+    font-size: 12px;
   }
 }
 @media (max-width: 480px) {
