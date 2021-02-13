@@ -1515,7 +1515,7 @@ h4,
 .price__sublist li::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 12px;
   height: 12px;
@@ -1840,6 +1840,9 @@ h4,
   overflow: hidden;
   margin-right: 20px;
 }
+.review__person {
+  width: calc(100% - 90px);
+}
 .review__name {
   margin-top: 0;
   margin-bottom: 5px;
@@ -1916,6 +1919,40 @@ h4,
   .service__slider {
     padding-bottom: 30px;
   }
+  .price__form {
+    padding-left: 0;
+  }
+  .banner__item {
+    width: 49%;
+  }
+  .call__form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .call__slogan {
+    font-size: 36px;
+  }
+  .call__phone {
+    font-size: 54px;
+  }
+  .review__btn {
+    top: 75px;
+  }
+  .review__slide::before {
+    right: 15px;
+  }
+  .swiper-button-prev {
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .swiper-button-next {
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .review__prev,
+  .review__next {
+    top: 40%;
+  }
 }
 @media (max-width: 1022px) {
   .header__top {
@@ -1945,6 +1982,7 @@ h4,
   h1 {
     font-size: 36px;
   }
+  .promo--internal .promo__info,
   .promo__info {
     padding-top: 20px;
   }
@@ -1982,6 +2020,7 @@ h4,
   .brand__wrap {
     display: block;
   }
+  .price__order,
   .brand__table,
   .brand__info {
     width: 100%;
@@ -2055,8 +2094,42 @@ h4,
   .footer__nav {
     width: 50%;
   }
+  .info__wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .call__block {
+    padding: 30px 20px;
+  }
+  .call__slogan {
+    font-size: 30px;
+  }
+  .call__phone {
+    font-size: 44px;
+  }
+  .price__sublist,
+  .price__service {
+    width: 50%;
+    padding: 20px;
+  }
+  .price__block,
+  .price__btn {
+    width: 25%;
+  }
+  .price__form {
+    padding: 20px;
+    padding-left: 0;
+  }
+  .price__line {
+    display: block;
+  }
+  .price__input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
 @media (max-width: 766px) {
+  .call__wrap::before,
   .header__time {
     display: none;
   }
@@ -2087,9 +2160,11 @@ h4,
     font-size: 12px;
     pointer-events: none;
   }
+  .call__wrap,
   .promo__wrap {
     display: block;
   }
+  .promo--internal .promo__info,
   .promo__info {
     width: 100%;
     margin-right: 0;
@@ -2118,6 +2193,36 @@ h4,
   .info__text {
     padding-right: 0;
   }
+  .price__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price__service {
+    width: 100%;
+    border-bottom: 1px solid rgba(36, 49, 58, 0.1);
+  }
+  .price__block,
+  .price__btn {
+    width: 50%;
+    padding: 10px;
+    border: 0;
+  }
+  .call__block,
+  .call__form,
+  .banner__item {
+    width: 100%;
+  }
+  .call__wrap {
+    background-image: none;
+    background-color: #FFE492;
+    border-radius: 12px;
+  }
+  .review .title-2 {
+    padding-right: 0;
+  }
+  .review__btn {
+    position: static;
+  }
 }
 @media (max-width: 480px) {
   .footer__nav {
@@ -2127,6 +2232,7 @@ h4,
   .footer__title::after {
     right: 0;
   }
+  .process,
   .brand,
   .benefits,
   .info {
@@ -2165,5 +2271,54 @@ h4,
   }
   .info__block {
     background-size: 100px 100px;
+  }
+  .price {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .call__slogan {
+    font-size: 22px;
+  }
+  .call__phone {
+    font-size: 36px;
+  }
+  .price__title {
+    font-size: 20px;
+  }
+  .price__service span {
+    font-size: 16px;
+  }
+  .price__form,
+  .price__sublist,
+  .price__block,
+  .price__btn {
+    width: 100%;
+  }
+  .price__block {
+    border-bottom: 1px solid rgba(36, 49, 58, 0.1);
+  }
+  .price__form {
+    padding-left: 20px;
+  }
+  .call,
+  .banner {
+    margin-bottom: 50px;
+  }
+  .call__block ul,
+  .process__title {
+    font-size: 18px;
+  }
+  .process__item {
+    padding: 20px;
+  }
+  .process__item::after {
+    top: 10px;
+    right: 15px;
+  }
+  .call__form {
+    padding: 20px;
+  }
+  .call__form .form__btn {
+    font-size: 12px;
   }
 }
