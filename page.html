@@ -211,7 +211,7 @@
             <p class="modal__title">Давайте обсудим вашу поломку</p>
             <form action="#" class="form">
               <input type="text" class="form__input" placeholder="Имя">
-              <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__">
+              <input type="tel" class="form__input" placeholder="Телефон">
               <input type="checkbox" id="checkbox1" class="form__checkbox">
               <label for="checkbox1" class="form__label">Я не робот</label>
               <button type="submit" class="btn form__btn">получить консультацию</button>
@@ -226,61 +226,63 @@
       <div class="wrapper">
         <p class="title-2">Отзывы наших клиентов</p>
         <a href="#" class="btn review__btn">все отзывы</a>
-        <div class="swiper-container review__slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide review__slide">
-              <div class="review__info">
-                <div class="review__top">
-                  <figure class="review__avatar">
-                    <img src="img/images/ava-1.png" alt="Филипова Ольга">
-                  </figure>
-                  <div class="review__person">
-                    <p class="review__name">Филипова Ольга</p>
-                    <time datetime="2020-11-25">25 ноября</time>
+        <div class="review__wrap">
+          <div class="swiper-container review__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review__slide">
+                <div class="review__info">
+                  <div class="review__top">
+                    <figure class="review__avatar">
+                      <img src="img/images/ava-1.png" alt="Филипова Ольга">
+                    </figure>
+                    <div class="review__person">
+                      <p class="review__name">Филипова Ольга</p>
+                      <time datetime="2020-11-25">25 ноября</time>
+                    </div>
                   </div>
+                  <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
                 </div>
-                <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
+                <div class="review__rating">
+                  <img src="img/icons/stars.png" alt="rating">
+                </div>
               </div>
-              <div class="review__rating">
-                <img src="img/icons/stars.png" alt="rating">
+              <div class="swiper-slide review__slide">
+                <div class="review__info">
+                  <div class="review__top">
+                    <figure class="review__avatar">
+                      <img src="img/images/ava-2.png" alt="Филипова Ольга">
+                    </figure>
+                    <div class="review__person">
+                      <p class="review__name">Филипова Ольга</p>
+                      <time datetime="2020-11-25">25 ноября</time>
+                    </div>
+                  </div>
+                  <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
+                </div>
+                <div class="review__rating">
+                  <img src="img/icons/stars.png" alt="rating">
+                </div>
+              </div>
+              <div class="swiper-slide review__slide">
+                <div class="review__info">
+                  <div class="review__top">
+                    <figure class="review__avatar">
+                      <img src="img/images/ava-3.png" alt="Филипова Ольга">
+                    </figure>
+                    <div class="review__person">
+                      <p class="review__name">Филипова Ольга</p>
+                      <time datetime="2020-11-25">25 ноября</time>
+                    </div>
+                  </div>
+                  <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
+                </div>
+                <div class="review__rating">
+                  <img src="img/icons/stars.png" alt="rating">
+                </div>
               </div>
             </div>
-            <div class="swiper-slide review__slide">
-              <div class="review__info">
-                <div class="review__top">
-                  <figure class="review__avatar">
-                    <img src="img/images/ava-2.png" alt="Филипова Ольга">
-                  </figure>
-                  <div class="review__person">
-                    <p class="review__name">Филипова Ольга</p>
-                    <time datetime="2020-11-25">25 ноября</time>
-                  </div>
-                </div>
-                <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
-              </div>
-              <div class="review__rating">
-                <img src="img/icons/stars.png" alt="rating">
-              </div>
-            </div>
-            <div class="swiper-slide review__slide">
-              <div class="review__info">
-                <div class="review__top">
-                  <figure class="review__avatar">
-                    <img src="img/images/ava-3.png" alt="Филипова Ольга">
-                  </figure>
-                  <div class="review__person">
-                    <p class="review__name">Филипова Ольга</p>
-                    <time datetime="2020-11-25">25 ноября</time>
-                  </div>
-                </div>
-                <p>Мастер по ремонту стиральных машин, Олег, молодец! Профессионал своего дела! Рекомендую!</p>
-              </div>
-              <div class="review__rating">
-                <img src="img/icons/stars.png" alt="rating">
-              </div>
-            </div>
+            <div class="swiper-pagination review__pagination"></div>
           </div>
-          <div class="swiper-pagination review__pagination"></div>
           <div class="swiper-button-prev review__prev"></div>
           <div class="swiper-button-next review__next"></div>
         </div>
@@ -291,11 +293,9 @@
       <div class="wrapper">
         <div class="info__wrap">
           <p class="title-2">Мастер по ремонту бытовой техники на дом</p>
-          <div class="info__text">
-            <p>Ремонт бытовой техники на дому у заказчика по низким ценам и с использованием только оригинальных запчастей и комплектующих. Выезд на диагноcтику — бесплатный. Чтобы сделать заказ мастера на дом, свяжитесь с нашим диспетчером по телефону: <a href="tel:+74997030153">+7 (499) 703-01-53</a> и вкратце опишите техническую проблему.</p>
-            <p>В течении нескольких минут с Вами свяжется сервисный инженер из вашего района и с ним Вы сможете обсудить удобное для Вас время, задать вопросы по регламенту работ и уточнить стоимость ремонта вашей техники.</p>
-            <p>В большинстве случаев достаточно одного выезда специалиста, который всегда имеет при себе комплект необходимых запчастей. Если поломка серьёзная, будет проведена комплексная диагностика вышедших из строя узлов и, после определения дефектов, предложены оптимальные пути для решения проблемы.</p>
-          </div>
+          <p>Ремонт бытовой техники на дому у заказчика по низким ценам и с использованием только оригинальных запчастей и комплектующих. Выезд на диагноcтику — бесплатный. Чтобы сделать заказ мастера на дом, свяжитесь с нашим диспетчером по телефону: <a href="tel:+74997030153">+7&nbsp;(499)&nbsp;703&#8209;01&#8209;53</a> и вкратце опишите техническую проблему.</p>
+          <p>В течении нескольких минут с Вами свяжется сервисный инженер из вашего района и с ним Вы сможете обсудить удобное для Вас время, задать вопросы по регламенту работ и уточнить стоимость ремонта вашей техники.</p>
+          <p>В большинстве случаев достаточно одного выезда специалиста, который всегда имеет при себе комплект необходимых запчастей. Если поломка серьёзная, будет проведена комплексная диагностика вышедших из строя узлов и, после определения дефектов, предложены оптимальные пути для решения проблемы.</p>
         </div>
       </div>
     </section>
@@ -402,6 +402,13 @@
           slidesPerView: 1,
         }
       }
+    });
+  </script>
+  
+  <script>
+    $('.process__title').click(function() {
+      $(this).next().slideToggle();
+      $(this).parent().toggleClass('process__item--opened');
     });
   </script>
 </body>

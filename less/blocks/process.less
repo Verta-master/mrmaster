@@ -1,0 +1,77 @@
+.process {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.process__drop ul,
+.process__list {
+  .reset();
+  list-style: none;
+}
+
+.process__item {
+  position: relative;
+  padding: 35px 30px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(153, 193, 211, 0.4);
+  border-radius: 12px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 26px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #D4F1FF;
+    background-image: url(../img/icons/plus-blue.svg);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: center;
+    pointer-events: none;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    .process__title {
+      color: @blue;
+      .transition();
+    }
+  }
+  
+  &--opened::after {
+    transform: rotate(45deg);
+    .transition();
+  }
+}
+
+.process__title {
+  padding-right: 50px;
+  font-size: 22px;
+  color: #24313A;
+  cursor: pointer;
+  .transition();
+}
+
+.process__drop {
+  display: none;
+  padding-top: 20px;
+  color: rgba(36,49,58,0.8);
+  
+  ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    
+    &::before {
+      content: "\2013";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

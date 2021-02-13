@@ -1,0 +1,108 @@
+.call {
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.call__wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/images/shape-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 8px;
+    background-color: #FFFFFF;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1169px;
+    height: 470px;
+    background-image: url(../img/images/bg-waves.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.call__form,
+.call__block {
+  width: 49%;
+  position: relative;
+  z-index: 5;
+}
+
+.call__block {
+  padding: 50px 40px;
+  line-height: 1.2;
+  
+  ul {
+    .reset();
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #24313A;
+    
+    li {
+      position: relative;
+      padding-left: 20px;
+      
+      &::before {
+        content: "\2013";
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.call__form {
+  padding: 35px 80px;
+  
+  .form__comment a {
+    text-decoration: none;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.call__slogan {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 46px;
+  color: #24313A;
+}
+
+.call__phone {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 70px;
+  color: @blue;
+  text-decoration: none;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #24313A;
+    .transition();
+  }
+}
