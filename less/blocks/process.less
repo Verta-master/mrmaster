@@ -1,5 +1,5 @@
 .process {
-  margin-top: 50px;
+  margin-top: 133px;
   margin-bottom: 100px;
 }
 
@@ -9,10 +9,15 @@
   list-style: none;
 }
 
+.process__list {
+  margin-top: 80px;
+}
+
 .process__item {
   position: relative;
   padding: 35px 30px;
-  margin-bottom: 20px;
+  padding-bottom: 37px;
+  margin-bottom: 22px;
   line-height: 1.2;
   background: #FFFFFF;
   box-shadow: 0px 4px 16px rgba(153, 193, 211, 0.4);
@@ -59,19 +64,23 @@
 
 .process__drop {
   display: none;
-  padding-top: 20px;
+  padding-top: 25px;
   color: rgba(36,49,58,0.8);
   
   ul li {
     position: relative;
     padding-left: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     
     &::before {
       content: "\2013";
       position: absolute;
       top: 0;
       left: 0;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
